@@ -1,0 +1,23 @@
+project: embedded-control-study-book
+language: ko
+workflow: codex_web_pull_request_per_lesson_or_lab
+current_status:
+  initialized: true
+  sample_lesson: book/02_c/01_memory_pointer_basics.md
+  sample_lab: labs/c/01_pointer_memory_lab
+next_lesson:
+  track: "00_orientation"
+  path: "book/00_orientation.md"
+  title: "임베디드 제어 SW 학습 로드맵과 클라우드 친화 워크플로"
+  reason: "전체 학습자가 저장소 사용법, 안전 경계, 포트폴리오 목표를 먼저 이해해야 한다."
+next_lab:
+  track: "python"
+  path: "labs/python/01_log_file_parser_lab"
+  title: "CSV 로그 파일을 읽고 기본 통계를 출력하는 Python 실습"
+quality_gate:
+  lesson_structure_script: "scripts/check_lesson_quality.py"
+  c_lab_build_command: "make -C labs/c/01_pointer_memory_lab"
+notes:
+  - "본문은 한국어로 작성한다."
+  - "한 PR에는 하나의 lesson 또는 하나의 lab을 권장한다."
+  - "방산 언급은 안전, 신뢰성, 검증, 문서화 범위로 제한한다."
