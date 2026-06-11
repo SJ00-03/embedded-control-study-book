@@ -1,0 +1,26 @@
+project: embedded-control-study-book
+language: ko
+workflow: codex_web_pull_request_per_lesson_or_lab
+current_status:
+  initialized: true
+  sample_lesson: book/02_c/01_memory_pointer_basics.md
+  sample_lab: labs/c/01_pointer_memory_lab
+  completed_lessons:
+    - book/00_orientation.md
+    - book/02_c/01_memory_pointer_basics.md
+next_lesson:
+  track: "01_python"
+  path: "book/01_python/01_python_syntax_execution.md"
+  title: "Python 문법과 실행 모델"
+  reason: "클라우드 친화 자동화, 로그 처리, 테스트 도구 학습의 출발점이다."
+next_lab:
+  track: "python"
+  path: "labs/python/01_log_file_parser_lab"
+  title: "CSV 로그 파일을 읽고 기본 통계를 출력하는 Python 실습"
+quality_gate:
+  lesson_structure_script: "scripts/check_lesson_quality.py"
+  c_lab_build_command: "make -C labs/c/01_pointer_memory_lab"
+notes:
+  - "본문은 한국어로 작성한다."
+  - "한 PR에는 하나의 lesson 또는 하나의 lab을 권장한다."
+  - "방산 언급은 안전, 신뢰성, 검증, 문서화 범위로 제한한다."

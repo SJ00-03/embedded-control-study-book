@@ -1,0 +1,4 @@
+initial speed: 1200 rpm
+updated speed: 1500 rpm
+sample average: 134
+null input check: rejected
