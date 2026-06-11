@@ -52,8 +52,7 @@
 
 ```bash
 python3 scripts/check_lesson_quality.py book/02_c/01_memory_pointer_basics.md
-make -C labs/c/01_pointer_memory_lab
-make -C labs/c/01_pointer_memory_lab run
+cd labs/c/01_pointer_memory_lab && make && ./main
 ```
 
 ## 안전 및 저작권 원칙

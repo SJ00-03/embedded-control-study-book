@@ -1,5 +1,5 @@
 # Build outputs
-labs/c/*/*_lab
+labs/c/*/main
 labs/c/*/*.o
 
 # Local editor and OS noise

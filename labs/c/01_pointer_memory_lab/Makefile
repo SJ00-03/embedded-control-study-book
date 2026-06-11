@@ -1,6 +1,6 @@
 CC ?= gcc
 CFLAGS ?= -std=c11 -Wall -Wextra -Wpedantic -O2
-TARGET := pointer_memory_lab
+TARGET := main
 
 .PHONY: all run clean
 

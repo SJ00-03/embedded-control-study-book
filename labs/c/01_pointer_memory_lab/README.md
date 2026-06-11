@@ -30,7 +30,7 @@ labs/c/01_pointer_memory_lab/
 
 ```bash
 make -C labs/c/01_pointer_memory_lab
-make -C labs/c/01_pointer_memory_lab run
+cd labs/c/01_pointer_memory_lab && make && ./main
 ```
 
 정리하려면 다음을 실행합니다.
@@ -44,7 +44,7 @@ make -C labs/c/01_pointer_memory_lab clean
 실행 결과는 `expected_output.txt`와 같아야 합니다.
 
 ```bash
-make -C labs/c/01_pointer_memory_lab run > /tmp/pointer_lab_output.txt
+(cd labs/c/01_pointer_memory_lab && make && ./main > /tmp/pointer_lab_output.txt)
 diff -u labs/c/01_pointer_memory_lab/expected_output.txt /tmp/pointer_lab_output.txt
 ```
 
