@@ -1,0 +1,14 @@
+# Build outputs
+labs/c/*/main
+labs/c/*/*.o
+
+# Local editor and OS noise
+.DS_Store
+*.swp
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Temporary output
+/tmp/
