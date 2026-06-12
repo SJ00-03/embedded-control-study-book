@@ -15,7 +15,9 @@
 - `book/`: 본문 lesson
 - `labs/`: 빌드 또는 실행 가능한 실습
 - `quizzes/`: 확인 문제 모음
-- `solutions/`: 해설 및 예시 답안
+- `study_notes/`: 학습자가 직접 작성하는 개인 답안, 실습 기록, 오답노트
+- `feedback/`: Codex가 개인 답안을 검토한 피드백
+- `solutions/`: 개인 답안 작성 후 비교할 모범 답안과 해설
 - `prompts/`: Codex Web에 사용할 반복 작업 프롬프트
 - `scripts/`: 품질 검사 자동화 스크립트
 - `progress_state.yml`: 다음에 생성할 콘텐츠 상태
@@ -28,6 +30,26 @@
 4. ROS 2: 노드, 토픽, 서비스, 액션, QoS, tf2, launch, lifecycle
 5. MATLAB/Control: 시스템 모델링, PID, 상태공간, 이산화, 구현 제약
 6. Integrated Projects: PC-임베디드-분석 도구를 연결한 미니 프로젝트
+
+## 개인 문제 풀이 워크플로
+
+이 저장소는 lesson을 읽은 뒤 바로 모범 답안을 보는 방식이 아니라, 먼저 자기 답을 작성하고 Codex에게 리뷰를 받는 흐름을 권장합니다.
+
+1. `book/`의 lesson을 읽고 학습 목표, 확인 문제, 심화 과제를 확인합니다.
+2. 해당 트랙의 `study_notes/` 파일에 먼저 자기 답을 작성합니다. 예: `study_notes/02_c/01_memory_pointer_basics_my_answer.md`
+3. lesson과 연결된 `labs/` 실습이 있으면 빌드·실행하고, 명령과 결과를 `study_notes/`의 실습 기록과 실행 결과에 적습니다.
+4. 답안을 작성한 뒤 Codex에게 `prompts/review_my_answer.md` 흐름으로 리뷰를 요청합니다.
+5. Codex가 생성한 `feedback/` 문서를 읽고 개념 오류, 구현 오류, 디버깅 관점의 보완점을 확인합니다.
+6. `solutions/`의 모범 답안은 자기 답과 피드백을 먼저 읽은 뒤 비교용으로 확인합니다.
+7. 마지막으로 `study_notes/`에 오답 정리와 다음 복습 내용을 직접 보완합니다.
+
+### 디렉터리 사용 규칙
+
+- `study_notes/`는 개인 답안 공간이므로 Codex가 명시 요청 없이 덮어쓰지 않습니다.
+- `feedback/`은 Codex 리뷰 결과를 저장하는 공간입니다.
+- `solutions/`는 답안 작성 후 비교할 모범 답안을 저장하는 공간입니다.
+- `book/`에는 full solution이나 문항별 정답을 넣지 않습니다.
+- 학습자의 답안이 아직 없으면 `feedback/`과 `solutions/`를 만들지 않습니다.
 
 ## Lesson 표준 구조
 
